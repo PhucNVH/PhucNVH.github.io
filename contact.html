@@ -9,20 +9,26 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient py-0 gradient">
-        <div class="container"><a class="navbar-brand logo" href="#">Hoang Phuc</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse"
-                id="navbarNav">
+        <div class="container"><a class="navbar-brand logo" href="./index.html">Hoang Phuc</a><button
+                data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle
+                    navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="projects-no-images.html">Projects</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link"
+                            href="projects-no-images.html">Projects</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="cv.html">CV</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
                 </ul>
             </div>
+        </div>
+        <div class="progress">
+            <progress value="0" max="100" class="progress-bar"></progess>
         </div>
     </nav>
     <main class="page contact-page">
@@ -32,11 +38,16 @@
                     <h2>Contact me</h2>
                 </div>
                 <form>
-                    <div class="form-group"><label for="name">Your Name</label><input class="form-control item" type="text" id="name"></div>
-                    <div class="form-group"><label for="subject">Subject</label><input class="form-control item" type="text" id="subject"></div>
-                    <div class="form-group"><label for="email">Email</label><input class="form-control item" type="email" id="email"></div>
-                    <div class="form-group"><label for="message">Message</label><textarea class="form-control item" id="message"></textarea></div>
-                    <div class="form-group"><button class="btn btn-primary btn-block btn-lg" type="submit">Submit Form</button></div>
+                    <div class="form-group"><label for="name">Your Name</label><input class="form-control item"
+                            type="text" id="name"></div>
+                    <div class="form-group"><label for="subject">Subject</label><input class="form-control item"
+                            type="text" id="subject"></div>
+                    <div class="form-group"><label for="email">Email</label><input class="form-control item"
+                            type="email" id="email"></div>
+                    <div class="form-group"><label for="message">Message</label><textarea class="form-control item"
+                            id="message"></textarea></div>
+                    <div class="form-group"><button class="btn btn-primary btn-block btn-lg" type="submit">Submit
+                            Form</button></div>
                 </form>
             </div>
         </section>
@@ -44,7 +55,9 @@
     <footer class="page-footer">
         <div class="container">
             <div class="links"><a href="#">About me</a><a href="#">Contact me</a><a href="#">Projects</a></div>
-            <div class="social-icons"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-instagram-outline"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a></div>
+            <div class="social-icons"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
+                        class="icon ion-android-mail"></i></a><a href="#"><i class="icon ion-social-github"></i></a>
+            </div>
         </div>
     </footer>
     <script src="assets/js/jquery.min.js"></script>
