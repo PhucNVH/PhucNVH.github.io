@@ -61,6 +61,17 @@ main {
   min-height: calc(100vh - 3em);
   height: calc(100vh - 3em);
   width: 100vw;
+  animation: bg-blur linear 1s 1;
+  transition: 1s filter linear;
+}
+
+@keyframes bg-blur {
+  from {
+    filter: blur(5px);
+  }
+  to {
+    filter: blur(0px);
+  }
 }
 #background-video {
   height: 100%;
@@ -87,6 +98,55 @@ section.portfolio-block.block-intro .container {
 .special-skill-item .icon {
   background-color: var(--main-bg-color1) !important;
 }
+.portfolio-block.cv .group:not(:first-child) {
+  margin-top: 2rem;
+}
+section.portfolio-block.cv .badge {
+  background-color: var(--main-bg-color1);
+  color: var(--main-color2);
+  font-size: 0.85em;
+  border-radius: 2em;
+}
+
+section.portfolio-block.cv .badge:hover {
+  background-color: var(--main-bg-color2);
+  color: var(--main-color2);
+  font-size: 0.85em;
+  border-radius: 2em;
+}
+
+section.portfolio-block.cv .icon {
+  color: var(--main-bg-color1) !important;
+}
+section.portfolio-block.cv h2 {
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+section.portfolio-block .portfolio-info-card a {
+  color: var(--main-bg-color1) !important;
+}
+section.portfolio-block .project-card-no-image {
+  border-top: 4px solid var(--main-bg-color1);
+}
+.btn-outline {
+  color: var(--main-bg-color1);
+  border-color: var(--main-bg-color1);
+}
+.btn-outline:hover {
+  color: var(--main-color2);
+  background-color: var(--main-bg-color1);
+  border-color: var(--main-bg-color1);
+}
+
 section.portfolio-block.contact .heading {
   margin-bottom: 1em;
+}
+section.portfolio-block.contact .form-control:focus {
+  border-color: var(--main-bg-color1);
+  box-shadow: 0 0 0 0.1rem var(--main-bg-color1);
+}
+section.portfolio-block.contact .btn-primary {
+  color: var(--main-color2);
+  background-color: var(--main-bg-color1);
+  border-color: var(--main-bg-color1);
 }

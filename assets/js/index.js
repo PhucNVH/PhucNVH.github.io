@@ -1,5 +1,3 @@
-$(window).scroll(function(event) {});
-
 window.onscroll = function(e) {
   s = window.scrollY;
   d = document.body.clientHeight;
