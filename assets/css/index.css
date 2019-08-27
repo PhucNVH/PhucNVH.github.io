@@ -1,0 +1,92 @@
+:root {
+  --main-color1: lightblue;
+  --main-color2: white;
+  --main-bg-color1: #ad5389;
+  --main-bg-color2: #3c1053;
+  /* --main-bg-color1: #0f0c29;
+  --main-bg-color2: #302b63;
+  --main-bg-color3: #24243e; */
+  --secondary-bg-color: black;
+}
+html {
+  overflow-x: hidden;
+}
+.navbar {
+  position: fixed;
+  height: 3em;
+  background: linear-gradient(
+    120deg,
+    var(--main-bg-color1),
+    var(--main-bg-color2)
+  );
+}
+.progress {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 3px;
+  width: 100%;
+  text-align: center;
+}
+.progress-bar {
+  background: linear-gradient(
+    120deg,
+    var(--main-bg-color1),
+    var(--main-bg-color2)
+  );
+  height: 5px;
+  width: 100%;
+  border: 0px;
+}
+
+progress::-webkit-progress-bar {
+  background: linear-gradient(
+    120deg,
+    var(--main-bg-color1),
+    var(--main-bg-color2)
+  );
+}
+.progress-bar::-moz-progress-bar {
+  background-color: var(--main-color1);
+}
+.progress-bar::-webkit-progress-value {
+  background-color: var(--main-color1);
+}
+main {
+  padding-top: 3em !important;
+}
+.background {
+  z-index: 1;
+  position: absolute;
+  min-height: calc(100vh - 3em);
+  height: calc(100vh - 3em);
+  width: 100vw;
+}
+#background-video {
+  height: 100%;
+  width: 100%;
+}
+section.portfolio-block:not(.cv) {
+  min-height: calc(100vh - 3em);
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.portfolio-block.block-intro {
+  margin: 0;
+  min-height: calc(100vh - 3em);
+  height: calc(100vh - 3em);
+  background-color: var(--secondary-bg-color);
+  color: var(--main-color2);
+}
+section.portfolio-block.block-intro .container {
+  z-index: 2;
+}
+
+.special-skill-item .icon {
+  background-color: var(--main-bg-color1) !important;
+}
+section.portfolio-block.contact .heading {
+  margin-bottom: 1em;
+}

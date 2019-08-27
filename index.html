@@ -5,12 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Home - Hoang Phuc</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 
 <body>
@@ -20,10 +18,9 @@
                     navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link"
-                            href="projects-no-images.html">Projects</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="./cv.html">CV</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="./contact.html">Contact</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#cv">CV</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -33,20 +30,23 @@
     </nav>
     <main class="page lanidng-page">
         <section class="portfolio-block block-intro">
+            <div class="background">
+                <video id="background-video" src="assets/background/earth.mp4" autoplay playsinline autoplay muted
+                    loop></video>
+            </div>
             <div class="container">
                 <div class="avatar" style="background-image:url(&quot;assets/img/avatars/avatar.jpg&quot;);"></div>
                 <div class="about-me">
                     <p>Hello World! I am <strong>Nguyen Vu Hoang Phuc</strong>. I am learning to be a fullstack
                         developer.<br>I have passion for pixel perfect, minimal and easy to use interfaces.</p>
-                    <a class="btn btn-outline-primary" role="button" href="/contact.html">Contact me</a>
+                    <a class="btn btn-outline-primary" role="button" href="#contact">Contact me</a>
                 </div>
             </div>
         </section>
-        <hr>
         <section class="portfolio-block skills">
             <div class="container">
                 <div class="heading">
-                    <h2>Special Skills</h2>
+                    <h2>spec Skills</h2>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
@@ -88,8 +88,93 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio-block cv">
+        <section class="portfolio-block cv" id="cv">
             <div class="container">
+
+                <div class="group">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="contact-info portfolio-info-card">
+                                <h2>Personal Info</h2>
+                                <div class="row">
+                                    <div class="col-1"><i class="icon ion-person icon"></i></div>
+                                    <div class="col-9"><span>Nguyễn Vũ Hoàng Phúc (Computer Science student
+                                            - HCMUT)</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1"><i class="icon ion-android-calendar icon"></i></div>
+                                    <div class="col-9"><span>09/08/1999</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1"><i class="icon ion-ios-telephone icon"></i></div>
+                                    <div class="col-9"><span>(+84) 393-25-1327</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1"><i class="icon ion-at icon"></i></div>
+                                    <div class="col-9"><a
+                                            href="mailto:nguyenvuhoangphuc11@gmail.com">nguyenvuhoangphuc11@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1"><i class="icon ion-document icon"></i></div>
+                                    <div class="col-9"><span><a href="assets/NVHPhuc_CV.pdf">PDF version CV</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skills portfolio-info-card">
+                                <h2>Skills</h2>
+                                <h3>Computer Languages</h3>
+                                <div>
+                                    <span class="badge badge-primary">HTML</span>
+                                    <span class="badge badge-primary">CSS</span>
+                                    <span class="badge badge-primary">Javascript</span>
+                                    <span class="badge badge-primary">C++</span>
+                                    <span class="badge badge-primary">Python</span>
+                                </div>
+                                <h3>Framworks & Libraries</h3>
+                                <div>
+                                    <span class="badge badge-primary">Angular</span>
+                                    <span class="badge badge-primary">jQuery</span>
+                                    <span class="badge badge-primary">Bootstrap</span>
+                                </div>
+                                <h3>Databases</h3>
+                                <div>
+                                    <span class="badge badge-primary">MySQL</span>
+                                    <span class="badge badge-primary">MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skills portfolio-info-card">
+                                <h2>Skills</h2>
+                                <h3>Tools & Platforms</h3>
+                                <div>
+                                    <span class="badge badge-primary">Git</span>
+                                    <span class="badge badge-primary">Linter</span>
+                                    <span class="badge badge-primary">VS Code</span>
+                                    <span class="badge badge-primary">Heroku</span>
+                                    <span class="badge badge-primary">Firebase</span>
+                                    <span class="badge badge-primary">MongoDB Atlas</span>
+                                    <span class="badge badge-primary">Azure</span>
+                                </div>
+                                <h3>Foreign Languages</h3>
+                                <div>
+                                    <span class="badge badge-primary">English</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hobbies group">
+                    <div class="heading">
+                        <h2 class="text-center">Hobbies</h2>
+                    </div>
+                    <p class="text-center text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                        risus ligula, iaculis ut metus sit amet, luctus pharetra mauris. Aliquam purus felis, pretium
+                        vel pretium vitae, dapibus sodales ante. Suspendisse potenti. Duis nunc eros.</p>
+                </div>
                 <div class="work-experience group">
                     <div class="heading">
                         <h2 class="text-center">Work Experience</h2>
@@ -124,84 +209,9 @@
                         </p>
                     </div>
                 </div>
-                <div class="group">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="skills portfolio-info-card">
-                                <h2>Skills</h2>
-                                <h3>Computer Languages</h3>
-                                <div>
-                                    <span class="badge badge-primary">HTML</span>
-                                    <span class="badge badge-primary">CSS</span>
-                                    <span class="badge badge-primary">Javascript</span>
-                                    <span class="badge badge-primary">C++</span>
-                                    <span class="badge badge-primary">Python</span>
-                                </div>
-                                <h3>Framworks & Libraries</h3>
-                                <div>
-                                    <span class="badge badge-primary">Angular</span>
-                                    <span class="badge badge-primary">jQuery</span>
-                                    <span class="badge badge-primary">Bootstrap</span>
-                                </div>
-                                <h3>Tools & Platforms</h3>
-                                <div>
-                                    <span class="badge badge-primary">Git</span>
-                                    <span class="badge badge-primary">Linter</span>
-                                    <span class="badge badge-primary">VS Code</span>
-                                    <span class="badge badge-primary">Heroku</span>
-                                    <span class="badge badge-primary">Firebase</span>
-                                    <span class="badge badge-primary">MongoDB Atlas</span>
-                                    <span class="badge badge-primary">Azure</span>
-                                </div>
-                                <h3>Databases</h3>
-                                <div>
-                                    <span class="badge badge-primary">MySQL</span>
-                                    <span class="badge badge-primary">MongoDB</span>
-                                </div>
-                                <h3>Foreign Languages</h3>
-                                <div>
-                                    <span class="badge badge-primary">English</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="contact-info portfolio-info-card">
-                                <h2>Contact Info</h2>
-                                <div class="row">
-                                    <div class="col-1"><i class="icon ion-android-calendar icon"></i></div>
-                                    <div class="col-9"><span>09/08/1999</span></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-1"><i class="icon ion-person icon"></i></div>
-                                    <div class="col-9"><span>Nguyen Vu Hoang Phuc</span></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-1"><i class="icon ion-ios-telephone icon"></i></div>
-                                    <div class="col-9"><span>(+84) 393-25-1327</span></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-1"><i class="icon ion-at icon"></i></div>
-                                    <div class="col-9"><span>nguyenvuhoangphuc@11gmail.com</span></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-1"><i class="icon ion-document icon"></i></div>
-                                    <div class="col-9"><span><a href="./NVHPhuc_CV.pdf">PDF version CV</a></span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hobbies group">
-                    <div class="heading">
-                        <h2 class="text-center">Hobbies</h2>
-                    </div>
-                    <p class="text-center text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-                        risus ligula, iaculis ut metus sit amet, luctus pharetra mauris. Aliquam purus felis, pretium
-                        vel pretium vitae, dapibus sodales ante. Suspendisse potenti. Duis nunc eros.</p>
-                </div>
             </div>
         </section>
-        <section class="portfolio-block project-no-images">
+        <section class="portfolio-block project-no-images" id="projects">
             <div class="container">
                 <div class="heading">
                     <h2>Recent Work</h2>
@@ -258,10 +268,11 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio-block contact">
+        <section class="portfolio-block contact" id="contact">
             <div class="container">
                 <div class="heading">
                     <h2>Contact me</h2>
+                    <h4>If you are looking for a Web Developer, contact me. I'm ready for new oppotunity.</h4>
                 </div>
                 <form>
                     <div class="form-group"><label for="name">Your Name</label><input class="form-control item"
@@ -280,25 +291,16 @@
     </main>
     <footer class="page-footer">
         <div class="container">
-            <div class="links"><a href="#">About me</a><a href="#">Contact me</a><a href="#">Projects</a></div>
-            <div class="social-icons"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
-                        class="icon ion-android-mail"></i></a><a href="#"><i class="icon ion-social-github"></i></a>
+            <div class="social-icons">
+                <a href="https://facebook.com/NVHP46"><i class="icon ion-social-facebook"></i></a>
+                <a href="https://github.com/PhucNVH"><i class="icon ion-social-github"></i></a>
+                <a href="mailto:nguyenvuhoangphuc11@gmail.com"><i class="icon ion-android-mail"></i></a>
             </div>
         </div>
     </footer>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
-    <script src="assets/js/theme.js"></script>
+    <!-- <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script> -->
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
-<script>
-    $(window).scroll(function (event) {
-        s = $(window).scrollTop();
-        d = $(document).height();
-        w = $(window).height();
-        p = s / (d - w) * 100;
-        $('.progress-bar')[0].value = p;
-    });
-</script>
