@@ -1,6 +1,7 @@
 :root {
   --main-color1: lightblue;
   --main-color2: white;
+  --main-color3: #00ddff;
   --main-bg-color1: #ad5389;
   --main-bg-color2: #3c1053;
   /* --main-bg-color1: #0f0c29;
@@ -11,14 +12,13 @@
 html {
   overflow-x: hidden;
 }
+body {
+  padding-top: 3em;
+}
 .navbar {
   position: fixed;
   height: 3em;
-  background: linear-gradient(
-    120deg,
-    var(--main-bg-color1),
-    var(--main-bg-color2)
-  );
+  background: linear-gradient(120deg, var(--main-bg-color1), var(--main-bg-color2));
 }
 .progress {
   position: absolute;
@@ -29,31 +29,23 @@ html {
   text-align: center;
 }
 .progress-bar {
-  background: linear-gradient(
-    120deg,
-    var(--main-bg-color1),
-    var(--main-bg-color2)
-  );
+  background: linear-gradient(120deg, var(--main-bg-color1), var(--main-bg-color2));
   height: 5px;
   width: 100%;
   border: 0px;
 }
 
 progress::-webkit-progress-bar {
-  background: linear-gradient(
-    120deg,
-    var(--main-bg-color1),
-    var(--main-bg-color2)
-  );
+  background: linear-gradient(120deg, var(--main-bg-color1), var(--main-bg-color2));
 }
 .progress-bar::-moz-progress-bar {
-  background-color: var(--main-color1);
+  background-color: var(--main-color3);
 }
 .progress-bar::-webkit-progress-value {
-  background-color: var(--main-color1);
+  background-color: var(--main-color3);
 }
 main {
-  padding-top: 3em !important;
+  padding: 0 !important;
 }
 .background {
   z-index: 1;
@@ -77,14 +69,16 @@ main {
   height: 100%;
   width: 100%;
 }
-section.portfolio-block:not(.cv) {
-  min-height: calc(100vh - 3em);
+section.portfolio-block {
+  min-height: 100vh;
   padding: 0;
+  padding-top: 3em;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 section.portfolio-block.block-intro {
+  padding: 0;
   margin: 0;
   min-height: calc(100vh - 3em);
   height: calc(100vh - 3em);
@@ -118,12 +112,48 @@ section.portfolio-block.cv .badge:hover {
 section.portfolio-block.cv .icon {
   color: var(--main-bg-color1) !important;
 }
+section.portfolio-block.skills .card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.portfolio-block.skills .icon-box {
+  height: 7em;
+  width: 7em;
+  border: 1px solid var(--main-bg-color1) !important;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.6s;
+}
+/* @keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+} */
 section.portfolio-block.cv h2 {
   margin-bottom: 1.5rem;
   text-transform: uppercase;
 }
+section.portfolio-block .portfolio-info-card {
+  color: var(--main-bg-color1) !important;
+  text-decoration: none;
+  position: relative;
+}
 section.portfolio-block .portfolio-info-card a {
   color: var(--main-bg-color1) !important;
+  text-decoration: none;
+}
+section.portfolio-block .portfolio-info-card a:hover {
+  color: var(--main-bg-color2) !important;
+  text-decoration: none;
 }
 section.portfolio-block .project-card-no-image {
   border-top: 4px solid var(--main-bg-color1);
@@ -137,7 +167,15 @@ section.portfolio-block .project-card-no-image {
   background-color: var(--main-bg-color1);
   border-color: var(--main-bg-color1);
 }
-
+section.portfolio-block.contact {
+  display: flex;
+  flex-wrap: wrap;
+}
+section.portfolio-block.contact .main {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
 section.portfolio-block.contact .heading {
   margin-bottom: 1em;
 }
@@ -149,4 +187,47 @@ section.portfolio-block.contact .btn-primary {
   color: var(--main-color2);
   background-color: var(--main-bg-color1);
   border-color: var(--main-bg-color1);
+}
+section.portfolio-block.contact form {
+  padding: 1em 3em;
+}
+
+section.portfolio-block.contact .lottie-wrapper {
+  width: 25%;
+  height: 75%;
+}
+section.portfolio-block.contact .container {
+  width: 50%;
+}
+section.portfolio-block.contact .place-holder {
+  width: 25%;
+}
+#lottie1 {
+  height: 100%;
+  width: 100%;
+}
+#lottie2 {
+  position: absolute;
+  width: 20%;
+  right: 0;
+  bottom: 0;
+}
+@media (max-width: 768px) {
+  #lottie2 {
+    width: 20%;
+    margin: 0 auto;
+  }
+  section.portfolio-block.contact .lottie-wrapper {
+    width: 100%;
+  }
+  section.portfolio-block.contact .container {
+    width: 100%;
+  }
+  section.portfolio-block.contact .place-holder {
+    display: none;
+  }
+  #lottie2 {
+    position: absolute;
+    width: 36%;
+  }
 }
