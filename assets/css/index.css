@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Special+Elite");
 :root {
   --main-color1: lightblue;
   --main-color2: white;
@@ -11,9 +12,11 @@
 }
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   padding-top: 3em;
+  background-color: #f8f8f8;
 }
 .navbar {
   position: fixed;
@@ -95,6 +98,37 @@ section.portfolio-block.block-intro .container {
 .portfolio-block.cv .group:not(:first-child) {
   margin-top: 2rem;
 }
+.portfolio-block.cv .group.quote {
+  display: flex;
+  justify-content: center;
+}
+.portfolio-block.cv .group.quote blockquote {
+  font-family: "Special Elite", cursive;
+  font-weight: 100;
+  font-size: 2rem;
+  line-height: 1.4;
+  position: relative;
+  margin: 0;
+  padding: 0.5rem;
+}
+.portfolio-block.cv .group.quote blockquote:before,
+.portfolio-block.cv .group.quote blockquote:after {
+  position: absolute;
+  color: #f1efe6;
+  font-size: 8rem;
+  width: 4rem;
+  height: 4rem;
+}
+.portfolio-block.cv .group.quote blockquote:before {
+  content: "“";
+  left: -5rem;
+  top: -2rem;
+}
+.portfolio-block.cv .group.quote blockquote:after {
+  content: "”";
+  right: -5rem;
+  bottom: 1rem;
+}
 section.portfolio-block.cv .badge {
   background-color: var(--main-bg-color1);
   color: var(--main-color2);
@@ -112,7 +146,22 @@ section.portfolio-block.cv .badge:hover {
 section.portfolio-block.cv .icon {
   color: var(--main-bg-color1) !important;
 }
+section.portfolio-block.skills {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 section.portfolio-block.skills .card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.portfolio-block.skills .card-title {
+  text-align: center;
+}
+section.portfolio-block.skills .card {
+  background-color: #f8f8f8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,6 +175,10 @@ section.portfolio-block.skills .icon-box {
   justify-content: center;
   align-items: center;
   transition: background-color 0.6s;
+  transition: transform 0.6s;
+}
+section.portfolio-block.skills .box:hover .icon-box {
+  transform: rotateY(180deg);
 }
 /* @keyframes spin {
   0% {
@@ -144,8 +197,12 @@ section.portfolio-block.cv h2 {
 }
 section.portfolio-block .portfolio-info-card {
   color: var(--main-bg-color1) !important;
+  background-color: var(--main-color2);
   text-decoration: none;
   position: relative;
+}
+section.portfolio-block .portfolio-info-card .personal {
+  font-size: 1.4em;
 }
 section.portfolio-block .portfolio-info-card a {
   color: var(--main-bg-color1) !important;
@@ -156,6 +213,7 @@ section.portfolio-block .portfolio-info-card a:hover {
   text-decoration: none;
 }
 section.portfolio-block .project-card-no-image {
+  background-color: var(--main-color2);
   border-top: 4px solid var(--main-bg-color1);
 }
 .btn-outline {
@@ -189,6 +247,7 @@ section.portfolio-block.contact .btn-primary {
   border-color: var(--main-bg-color1);
 }
 section.portfolio-block.contact form {
+  background-color: var(--main-color2);
   padding: 1em 3em;
 }
 
@@ -209,6 +268,11 @@ section.portfolio-block.contact .place-holder {
 #lottie2 {
   position: absolute;
   width: 20%;
+  right: 0;
+  bottom: 0;
+}
+#lottie3 {
+  width: 100%;
   right: 0;
   bottom: 0;
 }
