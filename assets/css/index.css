@@ -201,8 +201,8 @@ section.portfolio-block .portfolio-info-card {
   text-decoration: none;
   position: relative;
 }
-section.portfolio-block .portfolio-info-card .personal {
-  font-size: 1.4em;
+section.portfolio-block .portfolio-info-card.personal {
+  font-size: 1.2em;
 }
 section.portfolio-block .portfolio-info-card a {
   color: var(--main-bg-color1) !important;
@@ -265,16 +265,32 @@ section.portfolio-block.contact .place-holder {
   height: 100%;
   width: 100%;
 }
-#lottie2 {
-  position: absolute;
-  width: 20%;
-  right: 0;
-  bottom: 0;
-}
 #lottie3 {
   width: 100%;
   right: 0;
   bottom: 0;
+}
+.speech-bubble {
+  position: relative;
+  padding: 1em;
+  background: #00aabb;
+  border-radius: 0.4em;
+  color: white;
+}
+
+.speech-bubble:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 25%;
+  width: 0;
+  height: 0;
+  border: 0.844em solid transparent;
+  border-bottom-color: #00aabb;
+  border-top: 0;
+  border-right: 0;
+  margin-left: -0.422em;
+  margin-top: -0.844em;
 }
 @media (max-width: 768px) {
   #lottie2 {
