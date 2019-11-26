@@ -108,6 +108,37 @@ section.portfolio-block.block-intro .social-icons .btn {
   padding: 6px 0;
   border-radius: 50%;
 }
+/* .portfolio-block.block-intro p:first-child {
+  margin-bottom: 0;
+} */
+.tracking-in-expand {
+  text-align: center;
+  animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  font-size: 30px !important;
+}
+#avatar:hover #quote {
+  animation-iteration-count: 0;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  color: red;
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#about-me .heading:first-child {
+  margin-bottom: 50px;
+}
+#about-me .heading h2:first-child {
+  margin-bottom: 50px;
+}
 .special-skill-item .icon {
   background-color: var(--main-bg-color1) !important;
 }
@@ -117,6 +148,11 @@ section.portfolio-block.block-intro .social-icons .btn {
 .portfolio-block.cv .group.quote {
   display: flex;
   justify-content: center;
+}
+.portfolio-block.cv .group p {
+  font-size: 1.2em;
+  font-weight: bolder;
+  margin: 0rem 0rem 1rem 0rem;
 }
 
 section.portfolio-block.cv .badge {

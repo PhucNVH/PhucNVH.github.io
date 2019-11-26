@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.jpg" />
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.png?s=2" />
 </head>
 
 <body>
@@ -36,16 +36,17 @@
                     loop></video>
             </div>
             <div class="container">
-                <div class="avatar" style="background-image:url(&quot;assets/img/avatars/avatar.jpg&quot;);"></div>
+                <div class="avatar" style="background-image:url(&quot;assets/img/avatars/avatar.jpg&quot;);"
+                    id="avatar"></div>
                 <div class="about-me">
-                    <p>Hello World! I am <strong>Nguyen Vu Hoang Phuc</strong>. I am learning to be a fullstack
-                        developer.<br>I have passion for pixel perfect, minimal and easy to use interfaces.</p>
+                    <p>Hello World! I am <strong>Nguyễn Vũ Hoàng Phúc</strong>. My desire is to be a software developer.
+                    </p>
+                    <p class="tracking-in-expand" id="quote">Always curious. Always explore.</p>
                     <div class="social-icons">
                         <a class="btn btn-outline" role="button" href="https://facebook.com/NVHP46"><i
                                 class="icon ion-social-facebook"></i></a>
 
-                        <a class="btn btn-outline" role="button"
-                            href="https://www.linkedin.com/in/phuc-nguyen-vu-hoang/"><i
+                        <a class="btn btn-outline" role="button" href="https://www.linkedin.com/in/PhucNVH"><i
                                 class="icon ion-social-linkedin"></i></a>
                         <a class="btn btn-outline" role="button" href="https://github.com/PhucNVH"><i
                                 class="icon ion-social-github"></i></a>
@@ -60,6 +61,7 @@
                 <div class="heading">
                     <h2>About me</h2>
                 </div>
+
                 <div class="group personal">
                     <h3>Personal Info</h3>
                     <div class="row">
@@ -99,7 +101,8 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-1"><i class="icon ion-document"></i></div>
-                                    <div class="col-9"><span><a href="assets/NVHPhuc_CV.pdf">CV - PDF version</a></span>
+                                    <div class="col-9"><span><a href="assets/NguyenVuHoangPhuc_CV.pdf">CV - PDF
+                                                version</a></span>
                                     </div>
                                 </div>
                             </div>
@@ -119,9 +122,10 @@
                                     <span class="badge">C++</span>
                                     <span class="badge">Python</span>
                                 </div>
-                                <h3>Framworks & Libraries</h3>
+                                <h3>Frameworks & Libraries</h3>
                                 <div>
                                     <span class="badge">Angular</span>
+                                    <span class="badge">ExpressJs</span>
                                     <span class="badge">jQuery</span>
                                     <span class="badge">Bootstrap</span>
                                 </div>
@@ -153,9 +157,13 @@
                 </div>
                 <div class="hobbies group">
                     <h3>Hobbies</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-                        risus ligula, iaculis ut metus sit amet, luctus pharetra mauris. Aliquam purus felis, pretium
-                        vel pretium vitae, dapibus sodales ante. Suspendisse potenti. Duis nunc eros.</p>
+                    <div class="item">
+                        <p>I always have curiousity to explore technology and it I spend most of my time to learn new
+                            things. In
+                            my free time, I love to play video games, . I love sports even though I'm not a good player,
+                            I
+                            want to enjoy the spirit of sports. My favorite sports are football and badminton.</p>
+                    </div>
                 </div>
                 <div class="work-experience group">
                     <h3>Work Experience</h3>
@@ -167,8 +175,9 @@
                             </div>
                             <div class="col-md-6"><span class="period">6/2019 - 9/2019</span></div>
                         </div>
-                        <p>Ant-tech is an outsourcing company, we create web, app for others company
-                            in Europe. At there I have oppotunity to join real projects, I fix bugs for a quiz game.</p>
+                        <p>Ant-tech is an outsourcing company, we develope webs, mobile apps for other companies
+                            in Europe. At there I have oppotunity to join real projects, working in a dynamic
+                            enviroment.</p>
                     </div>
                 </div>
                 <div class="education group">
@@ -181,9 +190,10 @@
                             </div>
                             <div class="col-md-6"><span class="period">08/2017 - NOW</span></div>
                         </div>
-                        <p>With the guide of my teacher here, I have developed both soft and
-                            technical skills. I learnt a lot knowledge about computer, algorithms and software process.
-                            And more important, I learnt how to be a good engineer here.
+                        <p>GPA: 7.9/10</p>
+                        <p>With the guidance of my lectures here, I have developed both soft and
+                            technical skills. I have learnt a lot knowledge about computer, algorithms and software
+                            process.
                         </p>
                     </div>
                 </div>
@@ -198,48 +208,49 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="project-card-no-image">
                             <h3>Utopia Hotel</h3>
-                            <h4>Lorem ipsum dolor sit amet</h4><a class="btn btn-outline btn-sm" role="button"
-                                href="#">See More</a>
+                            <h4>Hotel homepage and admin dashboard.</h4><a class="btn btn-outline btn-sm" role="button"
+                                href="https://myhotel-app.herokuapp.com">See More</a>
                             <div class="tags"><a href="#">JavaScript</a></div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
                         <div class="project-card-no-image">
                             <h3>Foodaholic</h3>
-                            <h4>Lorem ipsum dolor sit amet</h4><a class="btn btn-outline btn-sm" role="button"
-                                href="#">See More</a>
+                            <h4>Social network for foodies.</h4><a class="btn btn-outline btn-sm" role="button"
+                                href="https://github.com/PhucNVH/WeLoveSo">See More</a>
                             <div class="tags"><a href="#">PHP (frontend JavaScript)</a></div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
                         <div class="project-card-no-image">
                             <h3>Songtrivia</h3>
-                            <h4>Lorem ipsum dolor sit amet</h4><a class="btn btn-outline btn-sm" role="button"
-                                href="#">See More</a>
+                            <h4>Quiz game about song.</h4><a class="btn btn-outline btn-sm" role="button" href="">See
+                                More</a>
                             <div class="tags"><a href="#">JavaScript (Angular)</a></div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
                         <div class="project-card-no-image">
-                            <h3>Pokedex</h3>
-                            <h4>Lorem ipsum dolor sit amet</h4><a class="btn btn-outline btn-sm" role="button"
-                                href="#">See More</a>
-                            <div class="tags"><a href="#">JavaScript</a></div>
+                            <h3>P2P Chat</h3>
+                            <h4>A anonymous chat app.</h4><a class="btn btn-outline btn-sm" role="button"
+                                href="https://github.com/PhucNVH/P2PChat">See
+                                More</a>
+                            <div class="tags"><a href="#">JavaScript,Python</a></div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
-                        <div class="project-card-no-image">
-                            <h3>Lorem Ipsum</h3>
-                            <h4>Lorem ipsum dolor sit amet</h4><a class="btn btn-outline btn-sm" role="button"
-                                href="#">See More</a>
-                            <div class="tags"><a href="#">PHP</a></div>
+                        <div class="project-card-no-image" style="opacity: 0.3;">
+                            <h3>Pokedex (on progress)</h3>
+                            <h4>I choose you!</h4><a class="btn btn-outline btn-sm" role="button" href="">See More</a>
+                            <div class="tags"><a href="#">Javascript</a></div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
                         <div class="project-card-no-image">
                             <h3>Others</h3>
-                            <h4>Lorem ipsum dolor sit amet</h4><a class="btn btn-outline btn-sm" role="button"
-                                href="#">See More</a>
+                            <h4>Some other projects</h4><a class="btn btn-outline btn-sm" role="button"
+                                href="https://github.com/PhucNVH">See
+                                More</a>
                             <div class="tags"><a href="#">HTML</a></div>
                         </div>
                     </div>
@@ -284,6 +295,8 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/index.js"></script>
+    <script src="assets/js/lottie.min.js"></script>
+    <script src="assets/js/animation.js"></script>
 </body>
 
 </html>
