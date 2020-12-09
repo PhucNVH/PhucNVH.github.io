@@ -1,0 +1,8 @@
+{
+  "name": "PhucNVH.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:PhucNVH/PhucNVH.github.io.git",
+  "author": "Hoang-Phuc Nguyen-Vu <phuc.nguyen.k17@hcmut.edu.vn>",
+  "license": "MIT"
+}
